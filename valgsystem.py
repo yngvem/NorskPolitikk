@@ -34,7 +34,7 @@ def first_past_the_post(votes_dict, no_seats):
     np.random.shuffle(winners)
     gains_extras = winners[:no_extra]
 
-    mp_distribution = {
+    seat_distribution = {
         party: int(no_seats/no_winners + (party == gains_extras)) if votes == max_votes else 0
             for party, votes in zip(parties, party_votes)
     }
@@ -43,4 +43,4 @@ def first_past_the_post(votes_dict, no_seats):
         for party, votes in zip(parties, party_votes)
     }
 
-    return mp_distribution, lost_votes
+    return seat_distribution, lost_votes
