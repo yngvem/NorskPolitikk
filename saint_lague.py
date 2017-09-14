@@ -1,4 +1,14 @@
-#Saint_lagues metode-utkast
+"""
+TODO: WRITE DOCSTRING
+TODO: WRITE PSEUDOCODE INTO CODE
+"""
+
+__author__ = ['Yngve Mardal Moe', 'Brage Sekse Aarset']
+__email__ = ['yngve.m.moe@gmail.com', 'brage.aarset@gmail.com']
+
+import numpy as np
+
+#Draft of Saint-laguës method
 
 
 def saint_lague(votes_dict, no_seats):
